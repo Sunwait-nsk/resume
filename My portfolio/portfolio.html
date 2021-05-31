@@ -1,0 +1,70 @@
+<!-- Пиар вход  -->
+<style>.Myimge {position:absolute;z-index:2;margin-left: -65px;margin-top: -37px;}</style>
+<script type="text/javascript">
+    PiarNik="Вирус";
+    PiarPas="0000";
+
+    var L="<div id=\"PR_loginDiv\" style=\"display:none;\">\
+    <form id=\"form_login\" name=\"login\" method=\"post\" action=\"login.php?action=in\" onsubmit=\"return check_form()\">\
+    <fieldset>\
+    <input type=\"hidden\" name=\"form_sent\" value=\"1\"/>\
+    <input type=\"text\" id=\"fld1\" name=\"req_username\" size=\"21\" maxlength=\"25\"/>\
+    <input type=\"text\" id=\"fld2\" name=\"req_password\" size=\"7\" maxlength=\"16\"/>\
+    <input type=\"submit\" class=\"button\" name=\"login\"/>\
+    </fieldset>\
+    </form>\
+    </div>\
+    <span id=spMyimg><img class=\"Myimge\"  title=\"Быстрый вход для 'Пиарщиков'\" onclick=\"PiarIn()\" src=\"http://forumupload.ru/uploads/001a/11/44/2/702681.png\" onmouseover=\"this.src='http://forumupload.ru/uploads/001a/11/44/2/745908.png' \" onmouseout=\"this.src='http://forumupload.ru/uploads/001a/11/44/2/702681.png'\" /></span>";
+    if($("#navlogin").html()!=null){
+
+    $("#navlogin").append(L) //navlogin
+    $("#PR_loginDiv #fld1").val(PiarNik)
+    $("#PR_loginDiv #fld2").val(PiarPas)
+    function PiarIn () {$("#PR_loginDiv input[type='submit']").click();}
+    }
+</script>
+
+
+
+<!-- Переключение вкладок -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.splLink').click(function(){
+      $(this).parent().children('div.splCont').toggle('normal');
+      return false;
+    });
+  });
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+
+	$(".tab_content").hide(); 
+	$("ul.tabs li:first").addClass("active").show();
+	$(".tab_content:first").show();
+	
+	$("ul.tabs li").click(function() {
+    $("ul.tabs li").removeClass("active");
+    $(this).addClass("active");
+    $(".tab_content").hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).fadeIn();
+    return false;
+	});
+
+});
+</script>
+
+
+
+<!-- копирайт -->
+<div id="bottom-container">
+
+<div class="partner">
+
+<img src="http://i020.radikal.ru/1105/8a/24a0aad07e8e.png" alt="Последний шанс" title="Авторский мир, классическое фэнтези. NC-21">
+<br/>
+Это вот такой хороший и красивый Блок для вашего контента, заполните его, пожалуйста - дадим вам печеньку. Ну, может, даже две печеньки... Но не больше трех! ;)
+
+</div><div class="gerda">Дизайн © 2012 ZlobeR.ru (Герда) | <a href="http://zlober.ru/" target="_blank">ZlobeR.ru</a> | gerdm@ya.ru</div></div>

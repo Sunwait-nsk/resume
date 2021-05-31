@@ -1,0 +1,241 @@
+/*general*/
+*{
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    background: #0E0E0E;
+    color: #f1f1f1;
+  }
+  img{
+    max-width: 100%;
+  }
+  TABLE {
+    width: 800px; /* Ширина таблицы */
+    border: 1px solid black; /* Рамка вокруг таблицы */
+    border-bottom: none; /* Убираем линию снизу */
+    font-size: 25px;
+   }
+   TD, TH {
+    padding: 3px; /* Поля вокруг содержимого ячеек */
+   }
+   TH {
+    text-align: left; /* Выравнивание по левому краю */
+    background: black; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: 1px solid white; /* Рамка вокруг ячеек */
+   }
+   TD {
+    border: 1px solid black; /* Линия снизу */
+   }
+  .container{
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 0px;
+  }
+  /*block-header*/
+.block-header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    
+}    
+.header-list{
+  display: flex;
+  font-size: 25px;
+  line-height: 16px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+  /*section*/
+.block{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    background-color: #003232;
+    border-radius: 30%;
+    
+}
+.icon{
+  
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 30%;
+  text-align: center;
+}
+.icon i{
+  color: #551A8B;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.icon:hover{
+  background: #0088CC;
+  transition: 1s;
+}
+.icon i hover{
+  color: #0088CC;
+  transition: 1s;
+  transform: scale(1.3);
+}
+.text{
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.text1{
+  margin-left: 150px;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.foto{
+  margin-top: 100px;
+    display: inline;
+    height: 300px;
+    width: 200px;
+    margin-right: 150px;
+    background-image: url("../img/foto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+.phone{
+  margin-left: 150px;
+  font-size: 28px;
+  color:#f1f1f1;
+  font-style: italic;
+}
+.surname{
+  margin-top: 100px;
+  margin-left: 150px;
+  font-size: 48px;
+  width: 400px;
+  height: 100px;
+}
+.personal{
+  
+  display: flex;
+  flex: 1 1 400px;
+  flex-direction: column;
+    
+}
+.field-icon{
+  margin-left: 230px;
+  margin-top: 50px;
+  height: 100px;
+}
+.hypnotic-2 {
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:2px solid;
+  position: relative;
+  transform-origin: left;
+  animation: h2 1s infinite linear;
+}
+.hypnotic-2::before,
+.hypnotic-2::after {
+  content: "";
+  position: absolute;
+  inset:0 0 auto;
+  margin:auto;
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+  border:2px solid;
+  transform-origin: 50% calc(100% - 4px);
+  animation: inherit;
+}
+.hypnotic-2::after {
+  inset:auto 0 calc(100% + 2px);
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  transform-origin: 50% calc(200% - 2px);
+}
+@keyframes h2{
+  100% {transform:rotate(1turn)}
+}
+.infinity-2 {
+  width:90px;
+  height:14px;
+  background: radial-gradient(circle closest-side, currentColor 92%,#0000 ) calc(100%/3) 0/calc(100%/4) 100%;
+  animation:i2 0.5s infinite linear;
+}
+@keyframes i2 {
+    100% {background-position: 0 0}
+}
+.myself{
+  margin: 150px;
+  font-size: 30px;
+
+}
+.block-myself{
+  height: auto;
+}
+.programma{
+  margin-left: 40px;
+  height: 600px;
+  width: 800px;
+  background: url("../img/programma.jpg") no-repeat center center;
+  background-size: contain;
+}
+.progres{
+  margin-left: 40px;
+  height: 200px;
+  width: 800px;
+  background: url("../img/progres.jpg") no-repeat center center;
+  background-size: contain;
+}
+.education{
+  display: block;
+  margin: 100px;
+  font-size: 30px;
+  width: 1000px;
+  height: 800px;
+}
+.edu{
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 25px;
+}
+.edu1{
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+.infinity-3{
+  width:calc(80px / 0.707); /* 0.707 = cos(45deg) */
+  height:14px;
+  background: repeating-linear-gradient(-45deg, currentColor 0 15px,#0000 0 20px) left/200% 100%;
+  animation:i3 2s infinite linear;
+}
+@keyframes i3 {
+    100% {background-position:right}
+}
+
+ .table_exp{
+  background-color: #fff;
+  color: #0E0E0E;
+ }
+ .experience{
+  background-color: #fff;
+  color: #0E0E0E;
+  margin-left: 150px;
+  padding-top: 100px;
+  height: 2000px;
+  width: 100%;
+ }
